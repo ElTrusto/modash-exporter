@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Span Text Extractor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Span Text Extractor</h1>
+    
+    <div class="controls">
+      <button id="extractBtn">Extract Span Text</button>
+      <button id="saveBtn" disabled>Save Results</button>
+      <div class="filter-container">
+        <label for="filterInput">Filter by class (optional):</label>
+        <input type="text" id="filterInput" placeholder="e.g. highlight-text">
+      </div>
+    </div>
+    
+    <div class="results-container">
+      <h2>Results: <span id="resultCount">0</span> spans found</h2>
+      <div id="results" class="results">
+        <p class="no-results">No results yet. Click "Extract Span Text" to begin.</p>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
